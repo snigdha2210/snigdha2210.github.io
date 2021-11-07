@@ -30,7 +30,7 @@ const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 800,
-    reset: true
+    reset: false
 });
 
 /*SCROLL HOME*/
@@ -49,6 +49,10 @@ sr.reveal('.skills__subtitle',{});
 sr.reveal('.skills__text',{}); 
 sr.reveal('.skills__data',{interval: 200}); 
 sr.reveal('.skills__img',{delay: 600});
+
+
+/*SCROLL Achievements*/
+sr.reveal('li',{interval: 200}); 
 
 /*SCROLL WORK*/
 sr.reveal('.work__img',{interval: 200}); 
