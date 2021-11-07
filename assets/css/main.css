@@ -1,14 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Rubik';
 }
 
 #particles-js {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: #101319;
+  background: #0d1117;
   color: #88c8ff;
   margin-left: auto;
   margin-right: auto;
@@ -28,9 +27,6 @@ body {
 
 /*#F9F871*/
 
-@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
-@import url(https://fonts.googleapis.com/css?family=Rubik);
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -42,9 +38,9 @@ body {
   padding: 0;
   font-size: 100%;
   line-height: 1.5;
-  background-color: rgb(255, 255, 255);
-  color: #555;
-  font-family: 'Rubik', sans-serif;
+  background-color: #000;
+  color: #fff;
+  /* font-family: 'Rubik', sans-serif; */
 }
 
 article,
@@ -80,7 +76,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace;
+  /* font-family: monospace; */
   font-size: 1em;
 }
 
@@ -152,7 +148,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -4802,7 +4798,17 @@ template {
 .devicon-zend-plain.colored {
   color: #68b604;
 }
-
+.award-list {
+  list-style-type: none;
+}
+.award-list li::before {
+  color: #88c8ff;
+  content: '\00BB  ';
+}
+.award-list li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
 article,
 aside,
 figcaption,
@@ -4822,7 +4828,7 @@ strong {
   margin-top: 1em;
   padding-top: 1em;
   line-height: 1.25;
-  color: #333;
+  color: #ffffff;
 }
 
 h2 {
@@ -4880,7 +4886,7 @@ a img {
   text-align: center;
   color: #fff;
   position: absolute;
-  font-family: 'Rubik', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
   width: 80%;
   top: 50%;
   left: 50%;
@@ -4894,12 +4900,27 @@ a img {
   display: block;
   line-height: 1;
   color: #fff;
+  font-weight: 400;
+}
+
+.inline-img {
+  display: inline;
+  margin-left: 10px;
+}
+
+.skills-img {
+  margin: 10px;
+  width: 50px;
 }
 
 @media only screen and (min-width: 550px) {
   .header .site-title {
     margin: 0;
     font-size: 100px;
+  }
+  .skills-img {
+    margin: 10px;
+    width: 40px;
   }
 }
 
@@ -4909,6 +4930,7 @@ a img {
   line-height: 1;
   color: #fff;
   margin-top: 10px;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 550px) {
@@ -5142,7 +5164,7 @@ a img {
 }
 
 .footer {
-  background: #000000;
+  background: #0d1117;
   padding: 10px 0;
   margin-top: 100px;
   text-align: center;

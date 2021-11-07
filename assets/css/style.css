@@ -12,9 +12,12 @@
   --second-color: #ffffff;
 }
 
+.tech p {
+  font-size: 14px;
+}
 /*===== Fuente y tipografia =====*/
 :root {
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Poppins';
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
@@ -73,6 +76,12 @@ ul {
 a {
   text-decoration: none;
 }
+.tech a {
+  color: var(--first-color);
+}
+.title_tech {
+  color: var(--first-color);
+}
 img {
   max-width: 100%;
   height: auto;
@@ -83,10 +92,11 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color: #101319;
+  color: var(--first-color);
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
+  font-weight: 300;
 }
 .section-title::after {
   position: absolute;
@@ -99,8 +109,12 @@ img {
   top: 2rem;
 }
 .section {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
+  border-top: 1px white solid 10%;
+}
+section:nth-child(even) {
+  background-color: #0d1117;
 }
 
 /*===== LAYOUT =====*/
@@ -235,6 +249,10 @@ img {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
 
+.about__text {
+  text-align: justify;
+}
+
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
@@ -245,6 +263,7 @@ img {
 }
 .about__img {
   justify-self: center;
+  width: 200px;
 }
 .about__img img {
   width: 200px;
@@ -271,7 +290,7 @@ img {
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  box-shadow: 0 4px 20px #88c7ff17;
 }
 .skills__icon {
   font-size: 2rem;
@@ -319,9 +338,13 @@ img {
 .work__img img {
   transition: 1s;
   cursor: pointer;
+  /* height: 300px; */
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .work__img img:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 /* ===== CONTACT =====*/
@@ -371,7 +394,7 @@ img {
     margin: 0;
   }
   .section {
-    padding-top: 4rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
   }
   .section-title {
@@ -421,10 +444,16 @@ img {
     bottom: 15%;
   }
 
-  .about__container,
   .skills__container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     align-items: center;
+    justify-items: center;
+    text-align: initial;
+  }
+  .about__container {
+    /* grid-template-columns: repeat(2, 1fr); */
+    align-items: center;
+    justify-items: center;
     text-align: initial;
   }
   .about__img img {
