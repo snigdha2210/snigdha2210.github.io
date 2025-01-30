@@ -789,7 +789,9 @@ template {
 .fa-step-backward:before {
   content: '\f048';
 }
-
+.fa-external-link {
+  color: #fff;
+}
 .fa-fast-backward:before {
   content: '\f049';
 }
